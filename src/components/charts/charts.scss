@@ -1,0 +1,28 @@
+.charts{
+    flex: 4;
+    box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 5px 5px 0px rgba(0,0,0,0.75);
+    padding: 10px;
+    color: gray;
+    position: relative;
+    overflow:inherit;
+
+    .chart-container {
+        position: absolute;
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 40px;
+      }
+
+      .title{
+        margin-bottom: 20px;
+      }
+
+      .chartGrid{
+        stroke: rgb(210, 16, 16);
+      }
+}
