@@ -1,5 +1,3 @@
-// import React, { useRef } from 'react';
-
 
 import {
   BrowserRouter ,
@@ -13,11 +11,17 @@ import List from './pages/List/list'
 import New from './pages/New/new'
 import Single from './pages/Single/single'
 import Register from './pages/Register/register'
-
+import { productInputs, userInputs } from "./formSource";
+import './style/dark.scss'
+import { useContext } from "react";
+import { DarkModeContext } from "./context/darkModeContext";
 
 function App() {
+
+const {darkMode} = useContext(DarkModeContext)
+
   return (
-    <div className="App">
+    <div className={darkMode ? "app dark" :'app'}>
       <BrowserRouter>
         <Routes>
           <Route path='/'>
@@ -25,14 +29,14 @@ function App() {
             <Route path='users'>
                <Route index element ={<List/>}/>
                <Route path="login" element={<Login/>} />
-               <Route path="new" element={<New/>}/>
+               <Route path="new" element={<New input={userInputs} title='Add New User'/>}/>
                <Route path=":userId" element={<Single/>} />
                <Route path="register" element={<Register/>} />
           </Route>
           <Route path='products'>
                <Route index element ={<List/>}/>
                <Route path="login" element={<Login/>} />
-               <Route path="new" element={<New/>}/>
+               <Route path="new" element={<New input={productInputs} title='Add New Product'/>}/>
                <Route path=":producstId" element={<Single/>} />
                <Route path="register" element={<Register/>} />
           </Route>

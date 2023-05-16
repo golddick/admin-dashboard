@@ -1,8 +1,12 @@
 .sidebar{
     flex: 1;
     border-right: 0.5px solid rgb(221, 221, 221); 
-    min-height: 100vh;
-    background-color: white;
+    height: 100vh;
+    position: static;
+    
+    .Link{
+        text-decoration: none;
+    }
 
     .top{
         height: 50px;
@@ -10,6 +14,7 @@
         align-items: center;
         justify-content: center;
 
+      
 
         .logo{
             font-size: 20px;
@@ -26,6 +31,7 @@
 
     .center{
         padding-left: 10px;
+      
 
         ul{
             list-style: none;
@@ -68,6 +74,7 @@
         }
     }
     .bottom{
+        height: 50px;
         display: flex;
         align-items: center;
         margin: 10px;

@@ -1,6 +1,11 @@
 .datatable{
     height: 100%;
+    width: 80%;
     padding: 20px;
+    flex: 4;
+    overflow: hidden;
+
+ 
 
     .cellWithImg{
         display: flex;
@@ -55,5 +60,26 @@
             border: 2px dotted  rgba(139, 21, 0, 0.295);
             cursor: pointer;
         }
+    }
+    
+}
+
+.datatableTitle{
+    width: 80%;
+    font-size: 24px;
+    color: gray;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .Link{
+        text-decoration: none;
+        color: green;
+        font-size: 15px;
+        font-weight: 400;
+        border: 1px dotted green;
+        border-radius: 5px;
+        cursor: pointer;
     }
 }

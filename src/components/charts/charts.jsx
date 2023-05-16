@@ -55,15 +55,15 @@ const data = [
   {name: 'June', total:1200},
 ];
 
-function Charts() {
+function Charts({aspect , title}) {
   return (
     <div className='charts'>
-      <div className="title">Last 7 Months (Revenue)</div>
+      <div className="title">{title}</div>
       <div className="chart-container">
-        <ResponsiveContainer>
+        <ResponsiveContainer width='100%' aspect={aspect}>
           <AreaChart
             width={830}
-            height={0}
+            height={200}
             data={data}
             margin={{ top: 10, right: 20, left: 0, bottom: 0 }}
           >

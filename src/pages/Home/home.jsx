@@ -21,11 +21,13 @@ function home() {
         </div>
         <div className="charts">
           <Featured/>
-          <Charts/>
+          <Charts title='Last 6 Months (Revenue)'/>
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
+          <div className="table">
           <Table/>
+          </div>
         </div>
         </div>
     </div>

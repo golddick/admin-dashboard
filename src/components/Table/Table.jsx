@@ -63,8 +63,8 @@ function List() {
         },
       ];
   return (
-    <div className='table'>
-           <TableContainer component={Paper}>
+    <div>
+           <TableContainer component={Paper}  className='table'>
       <Table sx={{ minWidth: 650 }} aria-label="simple table">
         <TableHead>
           <TableRow>
@@ -82,7 +82,7 @@ function List() {
             <TableRow
               key={row.id}
             >
-              <TableCell>
+              <TableCell  className='tableCell'>
                 {row.id}
               </TableCell>
               <TableCell className='tableCell'>
