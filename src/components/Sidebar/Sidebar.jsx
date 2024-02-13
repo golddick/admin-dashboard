@@ -24,7 +24,7 @@ const {dispatch} = useContext(DarkModeContext)
     <div className="sidebar">
         <div className="top">
             <Link to='/' className="Link">
-            <span className="logo">FLing</span>
+            <span className="logo">KONNET</span>
             </Link >
         </div>
         <hr/>
